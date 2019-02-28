@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_ccec21d60b5e4ee9a258a71ad7597a00 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_ccec21d60b5e4ee9a258a71ad7597a00" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_ccec21d60b5e4ee9a258a71ad7597a00 = L.map(
+        'map_ccec21d60b5e4ee9a258a71ad7597a00', {
+        center: [55.95415, -3.20277],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_f5c0b31b08b5444eae6f5d23fbda6daf = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+    
+        var marker_9139d644e12c4e6bab7c7150eb11f543 = L.marker(
+            [55.95474881, -3.192773669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+        
+    
+            var popup_87333ed4e2e247c98b39b7512f58b3f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7b09beafb6f84bdc92dae20058f4eb75 = $(`<div id="html_7b09beafb6f84bdc92dae20058f4eb75" style="width: 100.0%; height: 100.0%;"><i>St Andrew Square</i></div>`)[0];
+                popup_87333ed4e2e247c98b39b7512f58b3f0.setContent(html_7b09beafb6f84bdc92dae20058f4eb75);
+            
+
+            marker_9139d644e12c4e6bab7c7150eb11f543.bindPopup(popup_87333ed4e2e247c98b39b7512f58b3f0)
+            ;
+
+            
+        
+    
+        marker_9139d644e12c4e6bab7c7150eb11f543.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0ef4d84cbd345bdb11418db0e0302b4 = L.marker(
+            [55.95264104, -3.187526919],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+        
+    
+            var popup_0a081872e1b24cbd902891c6961bf999 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b56c2b4f993e43b2b1ec9522ff4fc341 = $(`<div id="html_b56c2b4f993e43b2b1ec9522ff4fc341" style="width: 100.0%; height: 100.0%;"><i>Waverley Station</i></div>`)[0];
+                popup_0a081872e1b24cbd902891c6961bf999.setContent(html_b56c2b4f993e43b2b1ec9522ff4fc341);
+            
+
+            marker_f0ef4d84cbd345bdb11418db0e0302b4.bindPopup(popup_0a081872e1b24cbd902891c6961bf999)
+            ;
+
+            
+        
+    
+        marker_f0ef4d84cbd345bdb11418db0e0302b4.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ff3cf7211e08425ca87dbff88ce7b490 = L.marker(
+            [55.96503981, -3.176686415],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+        
+    
+            var popup_2805ee08a63e4f98b8f16c5002ddc3aa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45b09ebf2f864238b777f27dbf01c3cf = $(`<div id="html_45b09ebf2f864238b777f27dbf01c3cf" style="width: 100.0%; height: 100.0%;"><i>Leith Walk</i></div>`)[0];
+                popup_2805ee08a63e4f98b8f16c5002ddc3aa.setContent(html_45b09ebf2f864238b777f27dbf01c3cf);
+            
+
+            marker_ff3cf7211e08425ca87dbff88ce7b490.bindPopup(popup_2805ee08a63e4f98b8f16c5002ddc3aa)
+            ;
+
+            
+        
+    
+        marker_ff3cf7211e08425ca87dbff88ce7b490.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b94688979eb244bf84534753cc438f1e = L.marker(
+            [55.96092975, -3.181005315],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+        
+    
+            var popup_57edde35b36c4d3bb964486b83646691 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d37829c4b3bf429785de7cd8b9a9ef49 = $(`<div id="html_d37829c4b3bf429785de7cd8b9a9ef49" style="width: 100.0%; height: 100.0%;"><i>Brunswick Place</i></div>`)[0];
+                popup_57edde35b36c4d3bb964486b83646691.setContent(html_d37829c4b3bf429785de7cd8b9a9ef49);
+            
+
+            marker_b94688979eb244bf84534753cc438f1e.bindPopup(popup_57edde35b36c4d3bb964486b83646691)
+            ;
+
+            
+        
+    
+        marker_b94688979eb244bf84534753cc438f1e.bindTooltip(
+            `<div>`
+            + `Click me!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+
+            var circle_5a5198dfcf034fd1a476aa53d5aaa09e = L.circle(
+                [55.95474881, -3.192773669],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 100,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ccec21d60b5e4ee9a258a71ad7597a00);
+            
+    
+            var popup_a2678df12a55419fa66c2c97c3418fb7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c40200f0bfed416da3b58ba1be2afe1e = $(`<div id="html_c40200f0bfed416da3b58ba1be2afe1e" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+                popup_a2678df12a55419fa66c2c97c3418fb7.setContent(html_c40200f0bfed416da3b58ba1be2afe1e);
+            
+
+            circle_5a5198dfcf034fd1a476aa53d5aaa09e.bindPopup(popup_a2678df12a55419fa66c2c97c3418fb7)
+            ;
+
+            
+        
+</script>
